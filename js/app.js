@@ -1,6 +1,7 @@
 const secondHand = document.querySelector('.second-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const hourHand = document.querySelector('.hour-hand');
+const allHands = document.querySelectorAll('.hand');
 
 function setDate(){
   const now = new Date();
@@ -16,7 +17,14 @@ function setDate(){
   minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
+  //Fixes fidget warp at the end of each minute.
+
+  if(secondsDegrees === 90){
+    allHands.forEach(hand => hand.style.transition = 'none')
+  } else {
+    allHands.forEach(hand => hand.style.transition = '')
+  }
 }
 
 
-setInterval(setDate, 1000)
+setInterval(setDate, 1000);
