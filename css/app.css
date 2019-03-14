@@ -35,14 +35,14 @@ body{
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-.minute{
+.minute-hand{
 
 }
 
-.second{
+.second-hand{
 
 }
 
-.hour{
+.hour-hand{
 
 }
