@@ -2,6 +2,7 @@ html{
   font-family: 'helvetica neue';
   text-align: center;
   font-size: 10px;
+  background-color: #DCDCDC;
 
 }
 
@@ -12,7 +13,6 @@ body{
   flex: 1;
   min-height: 100vh;
   align-items: center;
-
 }
 
 .clock{
@@ -51,10 +51,8 @@ body{
 .second-hand{
   height: 2px;
   background-color: red;
-
 }
 
 .hour-hand{
   height: 6px;
-
 }
